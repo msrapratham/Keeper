@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <ul class="flex">
+        <li><i class="ri-planet-line nav-logo"></i></li>
+        <li><h1>Keeper</h1></li>
+      </ul>
+    </header>
+    <main class="flex">
+      <div class="input flex">
+        <input
+          class="text-box black-font"
+          id="textbox"
+          type="text"
+          placeholder="Take a note..."
+        />
+        <textarea
+          class="text-area invisible black-font"
+          id="notearea"
+          rows="4"
+          cols="50"
+          placeholder="Take a note..."
+          maxlength="500"
+          required
+        ></textarea>
+        <div class="btn invisible" id="button">
+          <i class="ri-add-circle-fill"></i>
+        </div>
+      </div>
+      <div class="card-container flex" id="card-container"></div>
+    </main>
+  </body>
+  <script src="Script.js"></script>
+</html>

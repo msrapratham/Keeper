@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  outline: none;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "roboto", "Open Sans", sans-serif;
+  font-weight: lighter;
+  color: #dbdbdb;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+body {
+  background-color: #0d0d0d;
+  width: 100svw;
+  height: 100svh;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.black-font {
+  color: black;
+}
+
+/* ------------------------------------ */
+.nav {
+  width: 100%;
+  height: 8%;
+  background-color: #36454f;
+
+  ul {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  .nav-logo {
+    font-size: 2rem;
+  }
+}
+
+li:first-child {
+  margin-right: auto;
+  margin-left: 1.2rem;
+}
+li:last-child {
+  margin-right: 1.5rem;
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+.input {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 41%;
+
+  .text-box,
+  .text-area {
+    width: 100%;
+    padding: 0.6rem 0.6rem;
+    border: 0.1px solid black;
+    transition: all 5ms ease-in-out;
+  }
+}
+.text-box {
+  border-radius: 25px;
+}
+.text-area {
+  resize: none;
+  overflow: hidden;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.btn {
+  transform: translatey(-50%) translateX(42%);
+  align-self: flex-end;
+  color: black;
+  font-size: 2.1rem;
+
+  i {
+    color: #36454f;
+  }
+
+  :hover {
+    color: #5a6b75;
+  }
+}
+.text-box:focus ~ .text-area,
+.text-area:focus {
+  opacity: 1;
+  visibility: visible;
+  max-height: 200px;
+  min-height: 50px;
+}
+.text-box-focus {
+  border-radius: 15px 15px 0px 0px;
+}
+.text-area-focus-text-box {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.card-container {
+  gap: 0.6rem;
+  justify-content: flex-start;
+}
+
+.card {
+  width: 14rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  position: relative;
+  .title {
+    padding: 12px 0 0 16px;
+    font-size: 1.1rem;
+    color: white;
+  }
+  .para {
+    padding: 12px 16px 12px 16px;
+    letter-spacing: 0.0142857143em;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: white;
+  }
+}
+
+.card:hover {
+  i {
+    visibility: visible;
+  }
+}
+main {
+  flex-direction: column;
+}
+
+.delete-icon {
+  color: #5a6b75;
+  margin-left: 12rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .input {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1126px) {
+  .input {
+    width: 70vw; /* Width when the viewport is at least 900px */
+  }
+}
